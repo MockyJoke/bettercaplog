@@ -2,7 +2,7 @@ FROM ubuntu
 # For raspberry pi use:
 # FROM resin/rpi-raspbian
 RUN apt-get -y update
-RUN apt-get -y install build-essential ruby-dev libpcap-dev iptables net-tools
+RUN apt-get -y install build-essential ruby-dev libpcap-dev iptables net-tools rubygems
 RUN gem install bettercap
 
 ENV LANLOG /home/lanlog
